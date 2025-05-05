@@ -2,6 +2,13 @@
 from langchain_ollama import ChatOllama
 from langgraph.prebuilt import create_react_agent
 import sqlite3
+from langsmith import traceable
+import os
+
+os.environ["LANGCHAIN_TRACING_V2"] = "true"
+os.environ["LANGCHAIN_API_KEY"] = "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"
+os.environ["LANGCHAIN_ENDPOINT"] = "https://api.smith.langchain.com"
+os.environ["LANGCHAIN_PROJECT"] = "pr-smug-community-5"
 
 # Tool 1: List all table names
 def list_tables():
@@ -52,7 +59,7 @@ Only use SELECT queries unless absolutely needed."""
 
 graph = create_react_agent(model, tools, prompt=system_prompt)
 
-# Chat interface
+@traceable
 def chat(question):
     inputs = {"messages": [("user", question)]}
     output = graph.invoke(inputs)
