@@ -1,26 +1,38 @@
-# 🧠 Private AI SQL Assistant with LangGraph + Ollama + Qwen2.5-Coder
+# 🧠 AI SQL Agent with LangGraph, Ollama, and LangSmith
 
-This project is a command-line AI assistant that can interact with a local SQLite database using natural language. It uses:
+[![MIT License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
+[![Ollama](https://img.shields.io/badge/Ollama-local--LLM-orange)](https://ollama.com)
+[![LangGraph](https://img.shields.io/badge/LangGraph-Agent--Orchestration-purple)](https://github.com/langchain-ai/langgraph)
+[![LangChain](https://img.shields.io/badge/LangChain-tool--integration-yellow)](https://www.langchain.com/)
+[![SQLite](https://img.shields.io/badge/SQLite-database-blue)](https://www.sqlite.org/)
 
-- [LangGraph](https://github.com/langchain-ai/langgraph) for creating ReAct-based agents
-- [Ollama](https://ollama.com/) to run local LLMs like `qwen2.5-coder:7b`
-- [LangChain](https://www.langchain.com/) tools integration
-- A local SQLite database (`langchain.db`) for executing SQL queries
-
----
-
-## 📦 Requirements
-
-- Python 3.10+
-- [Ollama installed](https://ollama.com/download)
-- SQLite (comes with Python)
-- Required Python libraries (see below)
+An interactive AI-powered SQL assistant that connects to a local SQLite database and answers natural language questions using advanced LLMs. It leverages **LangGraph** for agent orchestration, **LangChain** for tool integration, **Ollama** (with the `Qwen2.5-Coder` model) for language understanding, and **LangSmith** for tracing and debugging.
 
 ---
 
-## 🧠 LLM Used
+## 🎥 Demo
 
-This project uses the [Qwen2.5-Coder:7B](https://huggingface.co/Qwen/Qwen2.5-7B-Chat) model via Ollama:
+![AI SQL Agent Demo](https://github.com/Tarun553/AI-Agent/assets/demo.gif)  
+*Example: Natural language SQL queries with LLM-powered responses*
+
+> ℹ️ Replace the image URL with your actual demo GIF or video preview hosted on GitHub or an image hosting service.
+
+---
+
+## 🚀 Features
+
+- **Natural Language SQL Agent**: Ask questions about your database in plain English.
+- **Automated Tool Use**: List tables, describe schemas, and execute queries.
+- **LangSmith Tracing**: Debug and analyze interactions with ease.
+- **Extensible Architecture**: Add tools or swap out the LLM with minimal effort.
+
+---
+
+## 🛠️ Getting Started
+
+### 1. Clone the repository
 
 ```bash
-ollama pull qwen2.5-coder:7b
+git clone https://github.com/Tarun553/AI-Agent.git
+cd AI-Agent
