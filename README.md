@@ -13,7 +13,8 @@ An interactive AI-powered SQL assistant that connects to a local SQLite database
 
 ## 🎥 Demo
 
-![AI SQL Agent Demo][(https://raw.githubusercontent.com/Tarun553/AI-Agent/main/Screenshot2025-05-06%20052509.png)](https://github.com/Tarun553/AI-Agent/blob/745f68a9e78fbf13b8931a752acf04b443ce7d08/Screenshot%202025-05-06%20052509.png)
+![AI SQL Agent Demo](https://raw.githubusercontent.com/Tarun553/AI-Agent/745f68a9e78fbf13b8931a752acf04b443ce7d08/Screenshot%202025-05-06%20052509.png)
+
 
 
 *Example: Natural language SQL queries with LLM-powered responses*
